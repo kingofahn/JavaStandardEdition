@@ -13,13 +13,13 @@ public class GradeReport{
 		}
 		System.out.println("영어점수?");
 		int eng = sc.nextInt();
-		if(eng >100 || 0 > kor){
+		if(eng >100 || 0 > eng){
 			System.out.print("Error");
 			return;
 		}
 		System.out.println("수학점수?");
 		int math = sc.nextInt();
-		if(math >100 || 0 > kor){
+		if(math >100 || 0 > math){
 			System.out.print("Error");
 			return;
 		}
