@@ -14,7 +14,10 @@ public class WhileDemo2{
 		if(input1 < input2){
 			max = input2;
 			min = input1;
-		} 
+		} else {
+			max = input1;
+			min = input2;
+		}
 		/*
 		if(input1>input2){
 			temp=input1;
