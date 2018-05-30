@@ -2,6 +2,15 @@ import java.util.Scanner;
 public class LeapYear{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
+
+		while(true){
+		System.out.println("0.종료 1.시작");
+		int flag = sc.nextInt();
+		switch(flag){
+			case 0 :System.out.println("종료"); return;
+			case 1 :System.out.println("시작");break;
+		}
+
 		System.out.println("년도 입력해주세요");
 		int year = sc.nextInt();
 		String result ="";
@@ -12,7 +21,10 @@ public class LeapYear{
 		result="평년";
 		}
 
-		System.out.print(result);
+		System.out.println(result);
+		}
+
+		
 		
 	}
 }

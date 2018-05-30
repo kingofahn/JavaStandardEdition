@@ -2,6 +2,15 @@ import java.util.Scanner;
 public class BMI{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
+
+		while(true){
+		System.out.print("0.종료 1.시작");
+		int flag = sc.nextInt();
+		switch(flag){
+			case 0 :System.out.println("종료"); return;
+			case 1 :System.out.println("시작"); break;  
+		}
+
 		System.out.print("키를 입력하세요(cm) > : ");
 		double height = sc.nextDouble();
 		height = height/100;
@@ -26,6 +35,8 @@ public class BMI{
 			result = "저체중";
 		}
 		System.out.println("BMI 결과는" + result + "입니다.");
+
+		}
 
 	}
 }
