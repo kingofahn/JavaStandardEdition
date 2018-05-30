@@ -2,7 +2,20 @@ import java.util.Scanner;
 public class GradeReport{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		System.out.println("이름?");
+
+		while(true){
+
+		System.out.print("0.End 1.Start > ");
+		int flag = sc.nextInt();
+
+		switch(flag){
+			case 0 : System.out.println("end"); return;
+			case 1 : System.out.println("Start"); break;
+			default : System.out.println("Wrong!!!"); continue;
+		}
+
+
+		System.out.println("이름?");	
 		String name = sc.next();
 		
 		System.out.println("국어점수?");
@@ -41,7 +54,14 @@ public class GradeReport{
 			hak = "F";
 		}
 
-		System.out.println(name + " " + "[평균] " + avg + "[학점] " + hak);
+		System.out.println(" [이름] : " + name + " " + " [평균] : " + avg + " [학점] : " + hak);
+
+
+		}
+
+
+
+		
 	}
 
 }
